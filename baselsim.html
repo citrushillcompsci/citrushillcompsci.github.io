@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>CHCSC - Basel Problem Simulator</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="scripts/jquery.js"></script>
+  
+</head>
+
+<body class="bg-dark text-light">
+  <div id="header"></div>
+  <div class="container p-5 m-5">
+    <h1>Basel Problem</h1>
+    <p><i>Ustes Greenridge</i></p>
+    <p>This is a problem in mathemetical analysis/number theory that concerns the infinite sum of inverse squares, which was first posed by Pietro Mengoli and solved by Leonhard euler. Essentially, it asks what the precise result of this summation would be:</p>
+    <img src="basel.png" height="200" width="200">
+    <p>Leonard Euler eventually determined it to be π² divided by 6. Ideally, this summation goes to infinity, but that's not possible given that we're working with finite memory.</p>
+  </div>
+  
+  <div class="container p-5 m-5">
+    <div id="output_area"><h2 id="output"></h2></div>
+    <input id="textin" type="number" pattern="\d+" min="2">
+    <button id="btn_gen">Generate</button>
+  </div>
+</body>
+  
+ <script type="text/javascript">
+  $(document).ready(function() {
+    $("#header").load("header.html");  
+  }
+ )
+ </script>
+ <script src="scripts/basel.js"></script>
+
+</html>
